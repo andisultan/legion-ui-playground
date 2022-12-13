@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@legion-theme/agree": "^1.3.0",
     "@legion-theme/ent": "^1.1.0",
     "@legion-theme/fin": "^1.1.0",
     "@legion-theme/logee": "^1.3.0",
