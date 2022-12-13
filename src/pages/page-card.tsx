@@ -1,28 +1,304 @@
 import React from 'react'
+import { Card, CardHeader, CardBody, CardFooter, Body, Button } from 'legion-ui'
 import Site from 'components/site'
-import { Textfield } from 'legion-ui';
 
 const PageCard = () => {
   return (
     <Site title="Card">
-        <h1 className="text-4xl mb-8"><strong>Input</strong></h1>
-
-        <div className="flex justify-between">
-          <div className="flex-1 px-3">
-            <h2 className="text-2xl mb-8">Small</h2>
-            <Textfield size="sm" label="Normal"/>
-            <Textfield size="sm" variant="error" label="Error" />
-            <Textfield size="sm" variant="success"  label="Success"/>
-          </div>
-          <div className="flex-1 px-3">
-            <h2 className="text-2xl mb-8">Medium</h2>
-            <Textfield size="md" />
-          </div>
-          <div className="flex-1 px-3">
-            <h2 className="text-2xl mb-8">Large</h2>
-            <Textfield size="lg" />
-          </div>
+      <div className="p-1 flex flex-wrap mb-4">
+        <div className="w-1/4 p-2">
+          <Card variant="flat">
+            <CardHeader>
+              <Body as="h5" size="lg_bold" color="tertiary800">
+                Flat Card
+              </Body>
+            </CardHeader>
+            <CardBody>
+              <img src="https://legion.telkom.design/images/apple.png" alt="card variant" />
+              <Body as="h6" size="lg_bold" color="tertiary800" mb={1} mt={2}>
+                Sub Title
+              </Body>
+              <Body size="sm_regular" color="tertiary500">
+                Some quick example text to build on the card title and content.
+              </Body>
+            </CardBody>
+            <CardFooter>
+              <div className="flex justify-between">
+                <Button variant="soft">Button</Button>
+                <Button variant="solid">Button</Button>
+              </div>
+            </CardFooter>
+          </Card>
         </div>
+        <div className="w-1/4 p-2">
+          <Card variant="flat" isHoverable>
+            <CardHeader>
+              <Body as="h5" size="lg_bold" color="tertiary800">
+                Flat Card
+              </Body>
+            </CardHeader>
+            <CardBody>
+              <img src="https://legion.telkom.design/images/apple.png" alt="card variant" />
+              <Body as="h6" size="lg_bold" color="tertiary800" mb={1} mt={2}>
+                Sub Title
+              </Body>
+              <Body size="sm_regular" color="tertiary500">
+                Some quick example text to build on the card title and content.
+              </Body>
+            </CardBody>
+            <CardFooter>
+              <div className="flex justify-between">
+                <Button variant="soft">Button</Button>
+                <Button variant="solid">Button</Button>
+              </div>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="w-1/4 p-2">
+          <Card variant="flat" isPressable >
+            <CardHeader>
+              <Body as="h5" size="lg_bold" color="tertiary800">
+                Flat Card
+              </Body>
+            </CardHeader>
+            <CardBody>
+              <img src="https://legion.telkom.design/images/apple.png" alt="card variant" />
+              <Body as="h6" size="lg_bold" color="tertiary800" mb={1} mt={2}>
+                Sub Title
+              </Body>
+              <Body size="sm_regular" color="tertiary500">
+                Some quick example text to build on the card title and content.
+              </Body>
+            </CardBody>
+            <CardFooter>
+              <div className="flex justify-between">
+                <Button variant="soft">Button</Button>
+                <Button variant="solid">Button</Button>
+              </div>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="w-1/4 p-2">
+          <Card variant="flat" isHoverable isPressable>
+            <CardHeader>
+              <Body as="h5" size="lg_bold" color="tertiary800">
+                Flat Card
+              </Body>
+            </CardHeader>
+            <CardBody>
+              <img src="https://legion.telkom.design/images/apple.png" alt="card variant" />
+              <Body as="h6" size="lg_bold" color="tertiary800" mb={1} mt={2}>
+                Sub Title
+              </Body>
+              <Body size="sm_regular" color="tertiary500">
+                Some quick example text to build on the card title and content.
+              </Body>
+            </CardBody>
+            <CardFooter>
+              <div className="flex justify-between">
+                <Button variant="soft">Button</Button>
+                <Button variant="solid">Button</Button>
+              </div>
+            </CardFooter>
+          </Card>
+        </div>
+      </div>
+      <div className="p-1 flex flex-wrap mb-4">
+        <div className="w-1/4 p-2">
+          <Card variant="bordered">
+            <CardHeader>
+              <Body as="h5" size="lg_bold" color="tertiary800">
+                Bordered Card
+              </Body>
+            </CardHeader>
+            <CardBody>
+              <img src="https://legion.telkom.design/images/apple.png" alt="card variant" />
+              <Body as="h6" size="lg_bold" color="tertiary800" mb={1} mt={2}>
+                Sub Title
+              </Body>
+              <Body size="sm_regular" color="tertiary500">
+                Some quick example text to build on the card title and content.
+              </Body>
+            </CardBody>
+            <CardFooter>
+              <div className="flex justify-between">
+                <Button variant="soft">Button</Button>
+                <Button variant="solid">Button</Button>
+              </div>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="w-1/4 p-2">
+          <Card variant="bordered" isHoverable>
+            <CardHeader>
+              <Body as="h5" size="lg_bold" color="tertiary800">
+                Bordered Card
+              </Body>
+            </CardHeader>
+            <CardBody>
+              <img src="https://legion.telkom.design/images/apple.png" alt="card variant" />
+              <Body as="h6" size="lg_bold" color="tertiary800" mb={1} mt={2}>
+                Sub Title
+              </Body>
+              <Body size="sm_regular" color="tertiary500">
+                Some quick example text to build on the card title and content.
+              </Body>
+            </CardBody>
+            <CardFooter>
+              <div className="flex justify-between">
+                <Button variant="soft">Button</Button>
+                <Button variant="solid">Button</Button>
+              </div>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="w-1/4 p-2">
+          <Card variant="bordered" isPressable >
+            <CardHeader>
+              <Body as="h5" size="lg_bold" color="tertiary800">
+                Bordered Card
+              </Body>
+            </CardHeader>
+            <CardBody>
+              <img src="https://legion.telkom.design/images/apple.png" alt="card variant" />
+              <Body as="h6" size="lg_bold" color="tertiary800" mb={1} mt={2}>
+                Sub Title
+              </Body>
+              <Body size="sm_regular" color="tertiary500">
+                Some quick example text to build on the card title and content.
+              </Body>
+            </CardBody>
+            <CardFooter>
+              <div className="flex justify-between">
+                <Button variant="soft">Button</Button>
+                <Button variant="solid">Button</Button>
+              </div>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="w-1/4 p-2">
+          <Card variant="bordered" isHoverable isPressable>
+            <CardHeader>
+              <Body as="h5" size="lg_bold" color="tertiary800">
+                Bordered Card
+              </Body>
+            </CardHeader>
+            <CardBody>
+              <img src="https://legion.telkom.design/images/apple.png" alt="card variant" />
+              <Body as="h6" size="lg_bold" color="tertiary800" mb={1} mt={2}>
+                Sub Title
+              </Body>
+              <Body size="sm_regular" color="tertiary500">
+                Some quick example text to build on the card title and content.
+              </Body>
+            </CardBody>
+            <CardFooter>
+              <div className="flex justify-between">
+                <Button variant="soft">Button</Button>
+                <Button variant="solid">Button</Button>
+              </div>
+            </CardFooter>
+          </Card>
+        </div>
+      </div>
+      <div className="p-1 flex flex-wrap mb-4">
+        <div className="w-1/4 p-2">
+          <Card variant="shadow">
+            <CardHeader>
+              <Body as="h5" size="lg_bold" color="tertiary800">
+                Shadow Card
+              </Body>
+            </CardHeader>
+            <CardBody>
+              <img src="https://legion.telkom.design/images/apple.png" alt="card variant" />
+              <Body as="h6" size="lg_bold" color="tertiary800" mb={1} mt={2}>
+                Sub Title
+              </Body>
+              <Body size="sm_regular" color="tertiary500">
+                Some quick example text to build on the card title and content.
+              </Body>
+            </CardBody>
+            <CardFooter>
+              <div className="flex justify-between">
+                <Button variant="soft">Button</Button>
+                <Button variant="solid">Button</Button>
+              </div>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="w-1/4 p-2">
+          <Card variant="shadow" isHoverable>
+            <CardHeader>
+              <Body as="h5" size="lg_bold" color="tertiary800">
+                Shadow Card
+              </Body>
+            </CardHeader>
+            <CardBody>
+              <img src="https://legion.telkom.design/images/apple.png" alt="card variant" />
+              <Body as="h6" size="lg_bold" color="tertiary800" mb={1} mt={2}>
+                Sub Title
+              </Body>
+              <Body size="sm_regular" color="tertiary500">
+                Some quick example text to build on the card title and content.
+              </Body>
+            </CardBody>
+            <CardFooter>
+              <div className="flex justify-between">
+                <Button variant="soft">Button</Button>
+                <Button variant="solid">Button</Button>
+              </div>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="w-1/4 p-2">
+          <Card variant="shadow" isPressable >
+            <CardHeader>
+              <Body as="h5" size="lg_bold" color="tertiary800">
+                Shadow Card
+              </Body>
+            </CardHeader>
+            <CardBody>
+              <img src="https://legion.telkom.design/images/apple.png" alt="card variant" />
+              <Body as="h6" size="lg_bold" color="tertiary800" mb={1} mt={2}>
+                Sub Title
+              </Body>
+              <Body size="sm_regular" color="tertiary500">
+                Some quick example text to build on the card title and content.
+              </Body>
+            </CardBody>
+            <CardFooter>
+              <div className="flex justify-between">
+                <Button variant="soft">Button</Button>
+                <Button variant="solid">Button</Button>
+              </div>
+            </CardFooter>
+          </Card>
+        </div>
+        <div className="w-1/4 p-2">
+          <Card variant="shadow" isHoverable isPressable>
+            <CardHeader>
+              <Body as="h5" size="lg_bold" color="tertiary800">
+                Flat Card
+              </Body>
+            </CardHeader>
+            <CardBody>
+              <img src="https://legion.telkom.design/images/apple.png" alt="card variant" />
+              <Body as="h6" size="lg_bold" color="tertiary800" mb={1} mt={2}>
+                Sub Title
+              </Body>
+              <Body size="sm_regular" color="tertiary500">
+                Some quick example text to build on the card title and content.
+              </Body>
+            </CardBody>
+            <CardFooter>
+              <div className="flex justify-between">
+                <Button variant="soft">Button</Button>
+                <Button variant="solid">Button</Button>
+              </div>
+            </CardFooter>
+          </Card>
+        </div>
+      </div>
     </Site>
   )
 }
