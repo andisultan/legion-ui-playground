@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { lgt } from '@legion-theme/logee';
+import { ThemeProvider } from 'legion-ui';
+import { AppRoute } from 'config/route'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={lgt}>
+      <AppRoute />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
