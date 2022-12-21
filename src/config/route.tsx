@@ -9,6 +9,7 @@ import {
 export const MENU = {
     PAGE_HOME: '/',
     PAGE_DASHBOARD: '/dashboard',
+    PAGE_ACCORDION: '/accordion',
     PAGE_ANCHOR: '/anchor',
     PAGE_AVATAR: '/avatar',
     PAGE_BADGE: '/badge',
@@ -31,6 +32,7 @@ export const MENU = {
 const Home = React.lazy(() => import('pages/home'))
 const PageDashboard = React.lazy(() => import('pages/page-dashboard'))
 const PageAnchor = React.lazy(() => import('pages/page-anchor'))
+const PageAccordion = React.lazy(() => import('pages/page-accordion'))
 const PageAvatar = React.lazy(() => import('pages/page-avatar'))
 const PageBadge = React.lazy(() => import('pages/page-badge'))
 const PageButton = React.lazy(() => import('pages/page-button'))
@@ -60,6 +62,7 @@ export const AppRoute = () => (
         <Route path={MENU.PAGE_HOME} element={<Home />} />
         <Route path={MENU.PAGE_DASHBOARD} element={<PageDashboard />} />
         <Route path={MENU.PAGE_ANCHOR} element={<PageAnchor />} />
+        <Route path={MENU.PAGE_ACCORDION} element={<PageAccordion />} />
         <Route path={MENU.PAGE_AVATAR} element={<PageAvatar />} />
         <Route path={MENU.PAGE_BADGE} element={<PageBadge />} />
         <Route path={MENU.PAGE_BUTTON} element={<PageButton />} />

@@ -23,6 +23,7 @@ const Site: FC<SiteProps> = ({ children, title }) => {
           <h3 className="text-3xl p-4">Dashboard</h3>
           <ul className="list-none m-0 mt-4 p-0">
             <li><Link className="w-full py-2 px-4 block" to={MENU.PAGE_DASHBOARD}>Dashboard</Link></li>
+            <li><Link className="w-full py-2 px-4 block" to={MENU.PAGE_ACCORDION}>Accordion</Link></li>
             <li><Link className="w-full py-2 px-4 block" to={MENU.PAGE_ANCHOR}>Anchor</Link></li>
             <li><Link className="w-full py-2 px-4 block" to={MENU.PAGE_AVATAR}>Avatar</Link></li>
             <li><Link className="w-full py-2 px-4 block" to={MENU.PAGE_BADGE}>Badge</Link></li>

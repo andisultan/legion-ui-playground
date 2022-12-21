@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Dropdown, Button, DynamicIcon, Anchor, Checkbox, Avatar } from 'legion-ui'
+import { Dropdown, Button, DynamicIcon, Anchor, Checkbox, Avatar  } from 'legion-ui'
 import Site from 'components/site'
 
 const PageDropdown = () => {
